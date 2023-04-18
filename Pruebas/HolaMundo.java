@@ -13,9 +13,9 @@ public class HolaMundo {
     }
 
     public static void ImprimEdad() {
-        System.out.println(edad);
+        System.out.println(HolaMundo.getEdad);
     }
     public static void main(String[] args) {
-        System.out.println("Hola mundo con más de " + HolaMundo.ImprimEdad + " años");
+        System.out.println("Hola mundo, corazones mios");
     }
 }
