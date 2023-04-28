@@ -2,24 +2,19 @@ package Pruebas.UD6;
 
 public class Articulo {
     
-    private String nombre;
+    private final String nombre;
     private double precio;
-    private double iva = 21;
+    private static double iva = 21;
     private int QuantasQuedan;
 
-    public Articulo(String nombre, double precio, double iva, int QuantasQuedan) {
+    public Articulo(String nombre, double precio, int QuantasQuedan) {
         this.nombre = nombre;
         this.precio = precio;
-        this.iva = iva;
         this.QuantasQuedan = QuantasQuedan;
     }
 
     public String getNombre() {
         return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public double getPrecio() {
@@ -52,7 +47,7 @@ public class Articulo {
 
     public String toString(){
         String str = "";
-        str  = "NOpmbre: " + nombre + "\n" + 
+        str  = "Nombre: " + nombre + "\n" + 
                 "Precio: " + precio + "\n" +
                 "iva: " + iva + "\n" +
                 "Cuantos quedan: " + QuantasQuedan;
